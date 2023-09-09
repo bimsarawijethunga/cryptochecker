@@ -6,7 +6,7 @@
   .coin-row {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     height: 80px;
     border-bottom: 1px solid #d7d7d7;
@@ -87,4 +87,11 @@
   
   .green {
     color: #11d811;
+  }
+
+  @media (max-width: 768px) {
+    .coin-container {
+      flex-direction: column;
+      font-size: small;
+    }
   }
